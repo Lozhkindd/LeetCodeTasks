@@ -1,0 +1,9 @@
+class Solution:
+    def countAndSay(self, n: int) -> str:
+        current = '1'
+        for i in range(n - 1):
+            lst = []
+            for k, l in groupby(current):
+                lst.append(str(len(list(l))) + k)
+            current = ''.join(lst)
+        return current
