@@ -7,3 +7,4 @@ class Solution:
                 lst.append(str(len(list(l))) + k)
             current = ''.join(lst)
         return current
+ 
